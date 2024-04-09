@@ -1,3 +1,13 @@
+## .env file for setup
+```ALLOWED_HOSTS = '*'
+SECRET_KEY = 'django-secret-key'
+DEBUG = True
+
+DB_NAME= 'simple_ecommerce_app'
+DB_USER= 'postgres'
+DB_PASSWORD= 'root'
+DB_HOST= 'localhost'
+```
 Here are some highlights of the project.
 ![image](https://github.com/n-pradip/simple-ecommerce-app/assets/64666568/36649036-3b0f-4905-ac3f-777ce8ae251a)
 
