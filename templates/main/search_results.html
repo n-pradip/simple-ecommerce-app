@@ -1,0 +1,43 @@
+{% extends "base.html" %} 
+
+
+{% block body %}
+
+<div class="container mx-auto">
+  <a href="#" class="products_list font-bold text-[21px]">
+    <span class="name block text-center my-5"> Search Results for {{query}} :  </span>
+  </a>
+
+  <div class="cards_coll">
+    <section class="flex flex-col mx-auto justify-center max-w-6xl px-4 sm:px-6">
+        <div class="flex flex-wrap justify-between mt-[10px]">
+            {% for each in results %}
+            <div class="w-60 p-[10px] drop-shadow-lg rounded-sm bg-white border-[1px] border-gray-200">
+                <img class="object-cover h-[180px] rounded-t-md" src='/media/{{each.image}}' alt="{{each.image}}" />
+                <div class="py-2 space-y-2">
+                    <Link href="#">
+                    <h3 class="text-[16px] font font-semibold">{{each.name}}</h3>
+                    </Link>
+                    <div class='flex flex-wrap items-center justify-between'>
+                        <div class="product-card-selling-cost">
+                            <span class="text-[18px] font-semibold text-red-500">Rs. {{each.price}}</span>
+                        </div>
+                        <div class="product-cardmarked-cost">
+                            <span class="ml-2 text-base text-red-700">58.33% off</span>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center pt-3">
+                        <button type="submit"
+                            class="inline-block rounded bg-[#0C3567] hover:opacity-90 px-4 py-2 text-sm font-medium text-white  active:bg-[#09b10cda]">
+                            View
+                        </button>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+</div>
+</div>
+
+{% endblock body %}
