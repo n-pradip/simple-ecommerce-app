@@ -3,10 +3,10 @@
 SECRET_KEY = 'django-secret-key'
 DEBUG = True
 
-DB_NAME= 'simple_ecommerce_app'
-DB_USER= 'postgres'
-DB_PASSWORD= 'root'
-DB_HOST= 'localhost'
+DB_NAME= 'db_name'
+DB_USER= 'db_user_name'
+DB_PASSWORD= 'db_password'
+DB_HOST= 'db_host_name'
 ```
 Here are some highlights of the project.
 ![image](https://github.com/n-pradip/simple-ecommerce-app/assets/64666568/36649036-3b0f-4905-ac3f-777ce8ae251a)
